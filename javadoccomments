@@ -1,0 +1,57 @@
+/**
+ * The Student class represents a student entity with a name, roll number, and marks.
+ */
+public class Student {
+    private String name;  // The name of the student.
+    private int rollNo;   // The roll number of the student.
+    private double marks; // The marks obtained by the student.
+
+    /** Gets the name of the student. */
+    public String getName() {
+        return name;
+    }
+
+    /** Sets the name of the student. */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /** Gets the roll number of the student. */
+    public int getRollNo() {
+        return rollNo;
+    }
+
+    /** Sets the roll number of the student. */
+    public void setRollNo(int rollNo) {
+        this.rollNo = rollNo;
+    }
+
+    /** Gets the marks of the student. */
+    public double getMarks() {
+        return marks;
+    }
+
+    /** Sets the marks of the student */
+    public void setMarks(double marks) {
+        this.marks = marks;
+    }
+
+    /** Returns a string representation of the Student object */
+    @Override
+    public String toString() {
+        return "Student\n" +
+               "Name: " + name + "\n" +
+               "Rollno: " + rollNo + "\n" +
+               "Marks: " + marks;
+    }
+
+    /** The main method to test the Student class. */
+    public static void main(String[] args) {
+        Student s = new Student();  // using default no-arg constructor
+        s.setName("Abi");
+        s.setRollNo(101);
+        s.setMarks(90.5);
+
+        System.out.println(s);  // prints student details
+    }
+}
